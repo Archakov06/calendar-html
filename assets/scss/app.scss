@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic');
+
+@import './variables';
+
+@import './mixins/center';
+@import './mixins/block';
+
+@import './components/calendar-block';
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', system-ui, Tahoma;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: $red-color;
+}

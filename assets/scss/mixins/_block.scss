@@ -1,0 +1,9 @@
+@mixin block($width, $height, $center: false) {
+  background-color: #fff;
+  border-radius: 20px;
+  width: $width;
+  height: $height;
+  @if $center == true {
+    @include center();
+  }
+}

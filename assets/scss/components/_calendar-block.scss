@@ -1,0 +1,65 @@
+.calendar-block {
+  @include block(520px, auto, true);
+  box-shadow: 0 10px 70px rgba(0, 0, 0, 0.35);
+  padding: 35px;
+  font-size: 22px;
+  color: darken($text-color, 5%);
+  &__day {
+    background-color: $red-color;
+    display: inline-block;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px lighten($red-color, 15%);
+    span {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+  &__monthyear {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    float: right;
+    margin-top: 10px;
+  }
+  &__list {
+    margin-top: 50px;
+    ul {
+      li {
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: #f4f4f4;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        &:hover {
+          background-color: #458ee5;
+          color: white;
+          transform: scale(1.03);
+          box-shadow: 0 10px 30px lighten($blue-color, 15%);
+        }
+      }
+    }
+  }
+  &__text {
+    font-weight: 500;
+  }
+  &__time {
+    float: right;
+  }
+  &__add-btn {
+    margin-top: 40px;
+    svg {
+      display: block;
+      cursor: pointer;
+      width: 32px;
+      margin: 0 auto;
+      path {
+        fill: lighten($blue-color, 15%);
+      }
+    }
+  }
+}

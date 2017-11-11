@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic");
+.calendar-block {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 520px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 10px 70px rgba(0, 0, 0, 0.35);
+  padding: 35px;
+  font-size: 22px;
+  color: #8d8d8d; }
+  .calendar-block__day {
+    background-color: #f64d5c;
+    display: inline-block;
+    border-radius: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 10px #fa969f; }
+    .calendar-block__day span {
+      display: inline-block;
+      padding: 10px; }
+  .calendar-block__monthyear {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    float: right;
+    margin-top: 10px; }
+  .calendar-block__list {
+    margin-top: 50px; }
+    .calendar-block__list ul li {
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      background-color: #f4f4f4;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      cursor: pointer; }
+      .calendar-block__list ul li:hover {
+        background-color: #458ee5;
+        color: white;
+        transform: scale(1.03);
+        box-shadow: 0 10px 30px #88b7ee; }
+  .calendar-block__text {
+    font-weight: 500; }
+  .calendar-block__time {
+    float: right; }
+  .calendar-block__add-btn {
+    margin-top: 40px; }
+    .calendar-block__add-btn svg {
+      display: block;
+      cursor: pointer;
+      width: 32px;
+      margin: 0 auto; }
+      .calendar-block__add-btn svg path {
+        fill: #88b7ee; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', system-ui, Tahoma; }
+
+html {
+  height: 100%; }
+
+body {
+  height: 100%;
+  background: #f64d5c; }
